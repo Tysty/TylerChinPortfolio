@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tyler Chin Portfolio</title>
     <link rel="stylesheet" href="main.css">
+    <script defer src="node_modules/swup/dist/swup.min.js"></script>
+    <script defer src="PageTrans.js"></script>
 </head>
 <body>
     <div class="app">
@@ -16,22 +18,20 @@
         <aside class="sidebar">
             <h3>Tyler Chin's Portfolio</h3>
             <nav class="menu">
-                <a href="index.html" class="menu-item">Home</a>
-                <a href="Projects.html" class="menu-item">Projects</a>
-                <a href="About.html" class="menu-item">About</a>
-                <a href="Contacts.html" class="menu-item is-active">Contacts</a>
+                <a href="/index.html" class="menu-item">Home</a>
+                <a href="/Projects.html" class="menu-item">Projects</a>
+                <a href="/About.html" class="menu-item">About</a>
+                <a class="menu-item is-active">Contacts</a>
             </nav>
         </aside>
-        <main class="content">
+        <main id="swup" class="content">
             <h1>Contacts</h1>
             <p>description</p>
             <p>description</p>
             <p>description</p>
         </main>
     </div>
-    <script defer src="node_modules/swup/dist/swup.min.js"></script>
     <script>
-        const swup = new Swup();
 		const menu_toggle = document.querySelector('.menu-toggle');
 		const sidebar = document.querySelector('.sidebar');
 
