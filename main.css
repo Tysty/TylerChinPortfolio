@@ -67,7 +67,6 @@
 	max-width: 300px;
 	padding: 2rem 1rem;
 	background-color: #2e3047;
-    transform: translateY(0);
 }
 
 .sidebar h3 {
@@ -101,18 +100,7 @@
 .content {
 	flex: 1 1 0;
 	padding: 2rem;
-    opacity: 1;
-    transition: 500ms;
 }
-
-html.is-animating .content {
-    opacity: 1;
-}
-
-html.is-leaving .content {
-    opacity: 0;
-}
-
 
 .content h1 {
 	color: #3C3F58;
