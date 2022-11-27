@@ -14,12 +14,12 @@
             </div>
         </div>
         <aside class="sidebar">
-            <h3>Tyler Chin</h3>
+            <h3>Tyler Chin's Portfolio</h3>
             <nav class="menu">
-                <a href="#" class="menu-item is-active">Home</a>
-                <a href="#" class="menu-item">About</a>
-                <a href="#" class="menu-item">Projects</a>
-                <a href="#" class="menu-item">Contacts</a>
+                <a href="Home" class="menu-item is-active">Home</a>
+                <a href="Projects" class="menu-item">Projects</a>
+                <a href="About" class="menu-item">About</a>
+                <a href="Contacts" class="menu-item">Contacts</a>
             </nav>
         </aside>
         <main class="content">
@@ -34,7 +34,6 @@
 		const sidebar = document.querySelector('.sidebar');
 
 		menu_toggle.addEventListener('click', () => {
-            console.log("Sidebar Opened!");
 			menu_toggle.classList.toggle('is-active');
 			sidebar.classList.toggle('is-active');
 		});
