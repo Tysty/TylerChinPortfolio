@@ -67,6 +67,7 @@
 	max-width: 300px;
 	padding: 2rem 1rem;
 	background-color: #2e3047;
+    transform: translateY(0);
 }
 
 .sidebar h3 {
