@@ -100,6 +100,20 @@
 .content {
 	flex: 1 1 0;
 	padding: 2rem;
+    opacity: 1;
+    transition: 500ms;
+    transform: translateY(0);
+    transform-origin: bottom;
+}
+
+html.is-animating .content {
+    opacity: 1;
+    transform: translateY(100%);
+}
+
+html.is-leaving .content {
+    opacity: 0;
+    transform: translateY(0);
 }
 
 .content h1 {
