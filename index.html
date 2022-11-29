@@ -101,6 +101,7 @@
             </div>
         </main>
     </div>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script>
 		const menu_toggle = document.querySelector('.menu-toggle');
 		const sidebar = document.querySelector('.sidebar');
@@ -109,6 +110,20 @@
 			menu_toggle.classList.toggle('is-active');
 			sidebar.classList.toggle('is-active');
 		});
+
+        function sendEmail(){
+            Email.send({
+            Host : "smtp.elasticemail.com",
+            Username : "username",
+            Password : "password",
+            To : 'them@website.com',
+            From : "you@isp.com",
+            Subject : "This is the subject",
+            Body : "And this is the body"
+            }).then(
+            message => alert(message)
+            );
+        }
 	</script>
 </body>
 </html>
