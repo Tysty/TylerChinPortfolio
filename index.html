@@ -93,10 +93,10 @@
                 <h1 id="Contacts">Contacts</h1>
                 <p>If you have any questions about my portfolio or just want to get in touch, fill out this form. And I will respond as soon as I can</p>
                 <form>
-                    <input type="text" name="name" placeholder="Full Name" required>
+                    <input type="text" id="name" name="name" placeholder="Full Name" required>
                     <input type="email" id="email" name="email" placeholder="Email" required>
                     <textarea name="Message" id="message" placeholder="Message" required></textarea>
-                    <input type="submit" value="Submit" onclick="sendEmail();">
+                    <input type="submit" value="Submit" onclick="sendEmail(); reset(); return false">
                 </form>
             </div>
         </main>
@@ -113,13 +113,13 @@
 
         function sendEmail(){
             Email.send({
-            Host : "smtp.elasticemail.com",
-            Username : "username",
+            Host : "smtp.gmail.com",
+            Username : "tylerstyle05@gmail.com",
             Password : "password",
-            To : 'them@website.com',
-            From : "you@isp.com",
-            Subject : "This is the subject",
-            Body : "And this is the body"
+            To : 'tylerstyle05@gmail.com',
+            From : document.getElementById("email").value,
+            Subject : "Portfolio message from "+document.getElementById("name").value,
+            Body : "Name: " + document.getElementById("name").value + "<br> Email: "+ document.getElementById("email").value + "<br> Message: "+ document.getElementById("message").value
             }).then(
             message => alert(message)
             );
