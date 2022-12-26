@@ -121,7 +121,8 @@
                     <input type="text" id="name" name="name" placeholder="Full Name" required>
                     <input type="email" id="email" name="email" placeholder="Email" required>
                     <textarea name="Message" id="message" placeholder="Message" required></textarea>
-                    <input type="submit" value="Submit" onclick="sendEmail(); reset(); return false">
+                    <input type="submit" value="Submit" onclick="sendEmail(); reset();">
+                    <h4 class="messageSent" id="sentMessage"></h4>
                 </form>
             </div>
         </main>
@@ -147,7 +148,7 @@
             Subject : "Portfolio message from "+document.getElementById("name").value,
             Body : "Name: " + document.getElementById("name").value + "<br> Email: "+ document.getElementById("email").value + "<br> Message: "+ document.getElementById("message").value
             }).then(
-            message => alert(message)
+            message => document.getElementById('sentMessage').innerHTML=message
             );
         }
 	</script>
