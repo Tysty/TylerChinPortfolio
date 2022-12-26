@@ -185,11 +185,6 @@
     bottom: 5%;
     width: 240px;
     padding-left: 20px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 2; /* number of lines to show */
     line-height: 1.25em;        /* fallback */
     max-height: 1.25em*2;       /* fallback */
 	font-size: 0.9vw;
