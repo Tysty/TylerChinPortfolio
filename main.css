@@ -27,7 +27,7 @@
 .hamburger {
 	position: relative;
 	top: calc(50% - 2px);
-	left: 50%;
+	left: 100%;
 	transform: translate(-50%, -50%);
 	width: 32px;
 }
